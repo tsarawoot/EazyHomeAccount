@@ -26,5 +26,17 @@ namespace EazyHomeAccount.Controllers
 
             return View();
         }
+
+        public ActionResult Login()
+        {
+            ViewBag.Message = "Please Login.";
+            return View();
+        }
+
+        public ActionResult SignUp()
+        {
+            ViewBag.Message = "Please Sign Up.";
+            return View();
+        }
     }
 }
