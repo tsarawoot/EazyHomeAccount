@@ -1,17 +1,26 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
+    <h1><strong>FlowerSoft.<br /></strong></h1>
+    114/84, Moo13 The Color Leisure, Bangna KM.8, Bangna-Trad Rd., Bangpleeyai, Bangplee, Samutprakarn 10540<br />
     <abbr title="Phone">P:</abbr>
-    425.555.0100
+    (+66) 85-126-1221, (+66) 87-790-3688
 </address>
 
 <address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>Marketing:</strong>   <a href="mailto:T.Sarawoot@gmail.com">T.Sarawoot@gmail.com</a><br />
+    <strong>Support:</strong> <a href="mailto:Budsaba.tan@gmail.com">Budsaba.tan@gmail.com</a>
 </address>
+
+<!-- map area by embedded link-->
+<h5>Embedded Link</h5>
+<iframe width="800" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=17&center=13.631933,100.685704&key=AIzaSyCAazfzebo2T890InY_Dk4TuwA16fYQkXM" allowfullscreen></iframe>
+<!-- map area by javascript-->
+<h5>JavaScript Maps</h5>
+<div id="map" style="width:800px; height:400px; background-color:grey; border-color:red; border:1px solid lightgray">My map will go here</div>
+
+<script type="text/javascript" src="~/Scripts/saraw.script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAazfzebo2T890InY_Dk4TuwA16fYQkXM&callback=googleMapHome"></script>
+<!-- key for "EazyHomeAccount":AIzaSyCAazfzebo2T890InY_Dk4TuwA16fYQkXM -->
