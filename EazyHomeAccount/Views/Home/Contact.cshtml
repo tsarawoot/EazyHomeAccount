@@ -1,4 +1,6 @@
-﻿@{
+﻿@model EazyHomeAccount.Models.EmailFormModel
+
+@{
     ViewBag.Title = "Contact";
 }
 <div style="align-content:center; margin:5px;; padding-left:100px">
@@ -8,6 +10,42 @@
 </div>
 <hr />
 
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <h4>Send your comments.</h4>
+    <hr />
+    <div class="form-group">
+        @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.FromName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.FromName)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.FromEmail)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Message, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Message)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Send" />
+        </div>
+    </div>
+}
+
+
+
+<hr />
 <address>
     114/84, Moo13 The Color Leisure, Bangna KM.8, Bangna-Trad Rd., Bangpleeyai, Bangplee, Samutprakarn 10540<br />
     <abbr title="Phone">P:</abbr>
