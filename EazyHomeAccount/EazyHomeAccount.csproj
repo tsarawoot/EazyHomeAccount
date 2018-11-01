@@ -213,6 +213,7 @@
     <Content Include="Views\Transactions\Edit.cshtml" />
     <Content Include="Views\Report\Default.cshtml" />
     <Content Include="Views\Report\Custom.cshtml" />
+    <Content Include="Views\Home\EmailSent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
